@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Docente - Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="docente-container">
+    <ion-button expand="full" (click)="generateQRCode()" *ngIf="isAuth">
+      {{  showQRCode ? 'Ocultar Código QR' : 'Generar Código QR' }}
+    </ion-button>
+
+    <div class="qr-placeholder" *ngIf="showQRCode">
+      <img src="assets/qr.png" alt="Código QR" style="width: 100%; max-width: 200px; height: auto;">
+    </div>
+  </div>
+</ion-content>

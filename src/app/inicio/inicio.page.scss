@@ -1,0 +1,22 @@
+.inicio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;         
+    height: 100vh;              
+    background-color: #f8b523; 
+    padding: 20px;
+}
+
+ion-card {
+    width: 80%;               
+    margin-top: 20px;         
+}
+
+ion-button {
+    --background: #001b35;    
+    --border-radius: 12px;     
+    margin-bottom: 20px;       
+    width: 100%;               
+    color: #f8b523;           
+}
